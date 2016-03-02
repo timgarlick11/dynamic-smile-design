@@ -1,0 +1,490 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+main { max-width: 1400px; height: auto; margin-left: auto; margin-right: auto;}
+header {
+	position: relative;
+}
+header > img {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 5;
+	bottom: -108px;
+	left:10%;
+}
+
+.header-phone-container { width: 100%; height: 45px; background: #535353;}
+
+.header-phone { color: #e1d0b2; margin-top:7px; margin-right: 15.7%; float: right;}
+.header-phone > span { font-size: 1.5em; color: white; margin-left: 10px;}
+.header-credentials-button-container { width: 80%; height: 75px; background:#fff; margin-top:33px; float: right; margin-right: 15%;}
+.header-credentials {float: left}  
+.header-credentials-title { font-size: 1.5em; margin-left: 35.5%; color: #535353;}
+.header-credentials-button { float:right; }
+.header-credentials-button > a{text-decoration: none; display: block; background: #6381a3; color: white; width: 281px; height: 32px; text-align: center; padding-top:11px; box-sizing: border: box; font-size: 1.2em; letter-spacing: 2px;}
+.header-credentials-button > a:hover{ background:#535353; }
+.header-credentials-title > span { display: block; font-size: .6em; color: #bbc0c7;}
+
+
+
+nav { height: 40px; width: 727px; margin-left: 33%;}
+nav > ul { list-style-type: none; margin: 0; padding: 0; }
+nav > ul > li {float: left; margin-left: 58px;}
+nav > ul > li:first-child {margin-left: 0;}
+nav > ul > li a { display: block; text-decoration: none; color: #808080; padding:11px; box-sizing: border-box;}
+nav > ul > li a:hover { background:#535353; color: #fff; }
+
+.top-banner {
+	position: relative;
+	margin-top: 108px;
+
+}
+.top-banner > img {
+	max-width:100%;
+	height:auto;
+}
+
+.banner-request-appointment {
+	position:absolute;
+	top: 24%;
+	height: auto;
+	left: 51.5%;
+	background: #ececed;
+	opacity: .5;
+	box-sizing: border-box;
+	width: 36%;
+}
+.banner-slogan-row-one {
+	width: 100%;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.banner-slogan-row-two {
+	width: 100%;
+	font-size: 7.5vw;
+	text-align: center;
+	letter-spacing:3px;
+
+}
+.banner-slogan-row-three {
+	width: 100%;
+	font-size: 2vw;
+	text-align: center;
+
+}
+
+.banner-slogan-button {
+	font-size: 1.5vw;
+	width: 95%;
+	letter-spacing: 2px;
+	background: #b59356; 
+	height: 53px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:4%;
+}
+
+.banner-slogan-button > a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding-top:10px;
+}
+.banner-slogan-button > a:hover {
+	background:#535353;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.smile-gallery-link-container {
+	width: 100%;
+	height: 325px;
+	background-color:#535353;
+	background-image: url("images/images/smile-gallery-background-image_14.jpg");
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	overflow: auto;
+	position: relative;
+}
+.smile-gallery-link-container > img {
+	position: absolute;
+	bottom:0;
+	left: 54%;
+	max-width: 100%;
+	height: auto;
+}
+.smile-gallery-info-container {
+	width: 75%;
+	height: auto;
+	margin-top: 83px;
+	color: #fff;
+	margin-left: 10%;
+	position: relative;
+}
+.smile-gallery-text-row-one {
+	margin-left: 55px;
+	font-size:1.5em;
+}
+.smile-gallery-text-row-two {
+	font-size:3em;
+	margin-left: 85px;
+	margin-top: 10px;
+	text-align: center;
+	width: 402px;
+	
+}
+.smile-gallery-button {
+	font-size: 1em;
+	width: 321px;
+	letter-spacing: 2px;
+	background: #7e90a7;
+	height: 45px;
+	color: #fff;
+	margin-left:110px;
+	margin-top:10px;
+	
+}
+.smile-gallery-button > a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding-top:12px;
+	box-sizing: border-box;
+	
+}
+.smile-gallery-button > a:hover {
+	background: #b59356;
+	height: 100%;
+}
+
+.dentistry-info-container {
+	width: 100%;
+	height: 1127px;
+}
+.dentistry-info-inner-container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	
+}
+.dentistry-info-office-image {
+	float: left;
+	margin-right: 35px;
+}
+
+.dentistry-info-inner-container > p {
+	line-height: 30px;
+	font-size:1.1em;
+	margin-top: 35px;
+}
+
+
+.dentistry-info-container > h2 {
+	text-align: center;
+	margin-top: 80px;
+	color:#7c92ac;
+}
+
+.dentistry-procedure-info-container {
+	width: 285px;
+	height:311px;
+	background:#f4eee3;
+	float: right;
+	margin-left: 30px;
+	text-align: center;
+	padding: 7px;
+	box-sizing: border-box;
+}
+.dentistry-procedure-info > h3 {
+	padding: 0;
+	margin: 5px ;
+	color:#7c92ac;
+}
+.dentistry-procedure-info   {
+	margin-top:20px;
+	color: #898783;
+}
+.procedure-info {
+	width: 80%;
+	margin: 0 auto;
+}
+.procedure-underline {
+	margin-top:10px;
+	border-bottom: 1.5px solid #ddcdb0;
+	box-sizing: border-box;
+	width:45px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.banner-two-container {
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+}
+.banner-two-container > img {
+	max-width: 100%;
+	height: auto;
+}
+.banner-two-inner-container {
+	position: absolute;
+	top: 0;
+}
+
+.banner-two-inner-container > h2 {
+	color: white;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	letter-spacing: 3px;
+}
+.banner-two-inner-container > p {
+	color: white;
+	max-width: 75%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	margin-bottom: 50px;
+}
+.banner-two-button {
+	width: 230px;
+	height:50px;
+	background: #fff;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+
+}
+.banner-two-button > a {
+	text-decoration: none;
+	display: block;
+	color: #b59356;
+	height: 100%;
+	padding-top: 15px;
+	box-sizing: border-box;
+
+}
+.banner-two-button > a:hover {
+	background:#C2A775;
+	color: #fff;
+}
+
+.meet-the-team-container {
+	width:100%;
+	height: auto;
+	margin-bottom:100px;
+}
+.meet-the-team-container > h2 {
+	margin-top: 100px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.meet-the-team-container > p {
+	margin-top: 100px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+}
+.staff-photo-container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.staff-photo {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.staff-name, .staff-role {
+	margin-top:8px;
+	text-align: center;
+	display: block;
+}
+.staff-name {
+	font-size:1.8em;
+	color:#6381a3;
+
+}
+.staff-role {
+	font-size:1em;
+	color:#8d8d8d;
+}
+.gallery-link-container-two {
+	min-height: 361px;
+}
+.gallery-link-container-two > img {
+	left:16%;
+}
+
+.smile-gallery-info-two  {
+	text-align: center;
+	width: 525px;
+	float: right;
+	margin-top:-25px;
+}
+.smile-gallery-info-two > p:first-child {
+	font-size:1.2em;
+}
+.smile-gallery-info-two > p:nth-child(2) {
+	color:#c2b49c;
+	margin-bottom:35px;
+}
+.smile-gallery-button-two {
+	background:#b59356;
+}
+.smile-gallery-button-two >a:hover {
+	background:#7e90a7;
+}
+
+.blog-container {
+	width: 100%;
+	height: auto;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.blog-border-container {
+	width:100%;
+	height: auto;
+	border: 2px solid #e1d0b2;
+	margin: 0 auto;
+}
+
+.blog-border-container > h2 {
+	margin-top:85px;
+	margin-bottom: 75px;
+	text-align: center;
+	font-size: 2em;
+	color:#6381a3;
+	letter-spacing: 3px;
+}
+.blog-link-container {
+	width:74%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 105px;
+
+}
+.blog-image {
+	position: relative;
+}
+.blog-caption {
+	width: 100%;
+	height: 69px;
+	background: #b28f54;
+	opacity:.9;
+	position: absolute;
+	z-index: 3;
+	bottom: 3px;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.blog-caption > span {
+	margin-top: 5px;
+	display: block;
+}
+.blog-caption > span > a {
+	text-decoration: none;
+	color:#f3e6cf;
+}
+.hyperlink-outer-container {
+	background-image: url("images/blog-top-image.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	width: 100%;
+	background-color:#6381a3;
+	min-height:125px;
+	padding-top:30px;
+	padding-bottom:30px;
+	box-sizing: border-box;
+}
+.hyperlink-inner-container {
+	width: 75%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.hyperlink-inner-container > ul > li {
+	list-style-type: none;
+	display: inline-block;
+}
+.hyperlink-inner-container > ul > li > a {
+	text-decoration: none;
+	color: #fff;
+}
+.hyperlink-inner-container > ul > li > span{
+	margin-left:5px;
+	color: #fff;
+}
+footer {
+	width: 100%;
+	min-height:350px;
+	box-sizing: border-box;
+	background-color:#535353;
+}
+.footer-inner-container {
+	width: 60%;
+	margin: 0 auto;
+	padding-top:40px;
+	box-sizing: border-box;
+}
+.footer-inner-container > h2{
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	letter-spacing: 3px;
+
+}
+.footer-info-container {
+	width: 545px;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.footer-copyright {
+	width: 60%;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	font-size: .8em;
+}
+.footer-social-media-container {
+	display: flex;
+	justify-content: space-between;
+	width: 250px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
