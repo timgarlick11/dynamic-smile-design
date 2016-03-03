@@ -2,6 +2,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	
 }
 
 
@@ -18,22 +19,22 @@ header > img {
 	left:10%;
 }
 
-.header-phone-container { width: 100%; height: 45px; background: #535353;}
+.header-phone-container { width: 100%; height: 45px; background: #535353; font-family: "Lato", sans-serif}
 
 .header-phone { color: #e1d0b2; margin-top:7px; margin-right: 15.7%; float: right;}
 .header-phone > span { font-size: 1.5em; color: white; margin-left: 10px;}
-.header-credentials-button-container { width: 80%; height: 75px; background:#fff; margin-top:33px; float: right; margin-right: 15%;}
-.header-credentials {float: left}  
-.header-credentials-title { font-size: 1.5em; margin-left: 35.5%; color: #535353;}
-.header-credentials-button { float:right; }
-.header-credentials-button > a{text-decoration: none; display: block; background: #6381a3; color: white; width: 281px; height: 32px; text-align: center; padding-top:11px; box-sizing: border: box; font-size: 1.2em; letter-spacing: 2px;}
+.header-credentials-button-container {/*position: relative;*/ display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;width: 706px; float: right;height: 75px; background:#fff; margin-top:33px; float: left; margin-left: 33.6%;font-family: "Poppins", sans-serif;}
+/*.header-credentials {float: left}  
+.header-credentials-title { font-size: 1.5em; margin-left: 37%; color: #535353;}*/
+/*.header-credentials-button {  float: right;}*/
+.header-credentials-button > a{text-decoration: none; display: block; background: #6381a3; color: white; width: 281px; height: 45px; text-align: center; padding-top:9px; box-sizing: border-box; font-size: 1.2em; letter-spacing: 2px;}
 .header-credentials-button > a:hover{ background:#535353; }
-.header-credentials-title > span { display: block; font-size: .6em; color: #bbc0c7;}
+.header-credentials-title > span { display: block; font-size: .5em; color: #bbc0c7;}
 
 
 
-nav { height: 40px; width: 727px; margin-left: 33%;}
-nav > ul { list-style-type: none; margin: 0; padding: 0; }
+nav { height: 40px; width: 750px; margin-left: 33%;}
+nav > ul { list-style-type: none; margin: 0; padding: 0;}
 nav > ul > li {float: left; margin-left: 58px;}
 nav > ul > li:first-child {margin-left: 0;}
 nav > ul > li a { display: block; text-decoration: none; color: #808080; padding:11px; box-sizing: border-box;}
@@ -42,53 +43,42 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 .top-banner {
 	position: relative;
 	margin-top: 108px;
+	margin-top: -4px;
 
 }
 .top-banner > img {
 	max-width:100%;
 	height:auto;
 }
-
-.banner-request-appointment {
-	position:absolute;
-	top: 24%;
-	height: auto;
-	left: 51.5%;
-	background: #ececed;
-	opacity: .5;
-	box-sizing: border-box;
-	width: 36%;
+.top-banner-inner > img {
+	max-width:95%;
+	height:auto;
 }
-.banner-slogan-row-one {
-	width: 100%;
-	font-size: 2vw;
-	text-align: center;
-}
-
-.banner-slogan-row-two {
-	width: 100%;
-	font-size: 7.5vw;
-	text-align: center;
-	letter-spacing:3px;
+.top-banner-inner {
+	position: absolute;
+	margin-top: 108px;
+	top: 10%;
+	left: 52%;
 
 }
-.banner-slogan-row-three {
-	width: 100%;
-	font-size: 2vw;
-	text-align: center;
-
+.top-banner-inner > img {
+	position: relative;
+	
 }
+
 
 .banner-slogan-button {
-	font-size: 1.5vw;
-	width: 95%;
+	font-size: 1.2em;
+	width: 82.5%;
 	letter-spacing: 2px;
-	background: #b59356; 
+	background: #b59356;
 	height: 53px;
 	color: #fff;
+	bottom: 39px;
+	left: 30px;
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top:4%;
 }
 
 .banner-slogan-button > a {
@@ -96,7 +86,7 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	padding-top:10px;
+	padding-top:16px;
 }
 .banner-slogan-button > a:hover {
 	background:#535353;
@@ -114,6 +104,7 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	background-repeat: no-repeat;
 	overflow: auto;
 	position: relative;
+	font-family: "Poppins", "Lato", sans-serif;
 }
 .smile-gallery-link-container > img {
 	position: absolute;
@@ -142,6 +133,9 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	width: 402px;
 	
 }
+.smile-gallery-text-row-two > span {
+	color: #a7aeb7;
+}
 .smile-gallery-button {
 	font-size: 1em;
 	width: 321px;
@@ -169,13 +163,15 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 
 .dentistry-info-container {
 	width: 100%;
-	height: 1127px;
+	height: auto;
+	font-family: "Poppins", "Lato", sans-serif;
 }
 .dentistry-info-inner-container {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 80px;
+	margin-bottom: 150px;
 	
 }
 .dentistry-info-office-image {
@@ -184,8 +180,8 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 }
 
 .dentistry-info-inner-container > p {
-	line-height: 30px;
-	font-size:1.1em;
+	line-height: 26.5px;
+	font-size:.9em;
 	margin-top: 35px;
 }
 
@@ -198,12 +194,13 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 
 .dentistry-procedure-info-container {
 	width: 285px;
-	height:311px;
+	height:303px;
 	background:#f4eee3;
 	float: right;
 	margin-left: 30px;
 	text-align: center;
-	padding: 7px;
+	padding: 10px;
+	margin-top: 25px;
 	box-sizing: border-box;
 }
 .dentistry-procedure-info > h3 {
@@ -214,9 +211,10 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 .dentistry-procedure-info   {
 	margin-top:20px;
 	color: #898783;
+	font-size:.75em;
 }
 .procedure-info {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 .procedure-underline {
@@ -228,11 +226,29 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	margin-right: auto;
 
 }
+.procedure-complimentary-button {
+	width: 300px;
+	height: 50px;
+	background:#b59356 ;
+	text-align: center;
+}
+.procedure-complimentary-button > a {
+	display: block;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+	padding-top: 12px;
+	box-sizing: border-box;
+}
+.procedure-complimentary-button > a:hover {
+	background: #7E90A7;
+}
 
 .banner-two-container {
 	width: 100%;
 	position: relative;
 	text-align: center;
+	font-family: "Poppins", "Lato", sans-serif;
 
 }
 .banner-two-container > img {
@@ -246,25 +262,28 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 
 .banner-two-inner-container > h2 {
 	color: white;
-	margin-top: 70px;
-	margin-bottom: 40px;
+	margin-top: 60px;
+	margin-bottom: 15px;
 	letter-spacing: 3px;
 }
 .banner-two-inner-container > p {
 	color: white;
-	max-width: 75%;
+	width: 80%;
 	margin: 0 auto;
 	font-size: 1.2em;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	display: inline-block;
+	
 }
 .banner-two-button {
-	width: 230px;
-	height:50px;
+	width: 20%;
+	height:40px;
 	background: #fff;
 	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+
+	
 
 }
 .banner-two-button > a {
@@ -272,8 +291,9 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	display: block;
 	color: #b59356;
 	height: 100%;
-	padding-top: 15px;
+	padding-top: 9px;
 	box-sizing: border-box;
+	letter-spacing: 2px
 
 }
 .banner-two-button > a:hover {
@@ -285,11 +305,15 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	width:100%;
 	height: auto;
 	margin-bottom:100px;
+	font-family: "Poppins", "Lato", sans-serif;
 }
 .meet-the-team-container > h2 {
 	margin-top: 100px;
 	margin-bottom: 60px;
 	text-align: center;
+	font-size: 2.3em;
+	letter-spacing: 2.3px;
+	color: #6381a3;
 }
 .meet-the-team-container > p {
 	margin-top: 100px;
@@ -354,6 +378,7 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 }
 
 .blog-container {
+	font-family: "Poppins", "Lato", sans-serif;
 	width: 100%;
 	height: auto;
 	padding-top:10px;
@@ -379,7 +404,7 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 105px;
 
 }
@@ -417,6 +442,7 @@ nav > ul > li a:hover { background:#535353; color: #fff; }
 	padding-top:30px;
 	padding-bottom:30px;
 	box-sizing: border-box;
+	font-family: "Poppins", "Lato", sans-serif;
 }
 .hyperlink-inner-container {
 	width: 75%;
@@ -450,12 +476,14 @@ footer {
 	background-color:#535353;
 }
 .footer-inner-container {
+	font-family:"Lato", sans-serif;
 	width: 60%;
 	margin: 0 auto;
 	padding-top:40px;
 	box-sizing: border-box;
 }
 .footer-inner-container > h2{
+	font-family: "Lato";
 	text-align: center;
 	color: #fff;
 	font-size: 3em;
@@ -470,13 +498,14 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+	font-size: .8em;
 }
 .footer-copyright {
 	width: 60%;
 	text-align: center;
 	color: #fff;
 	margin: 0 auto;
-	font-size: .8em;
+	font-size: .6em;
 }
 .footer-social-media-container {
 	display: flex;
@@ -487,4 +516,179 @@ footer {
 	margin-right: auto;
 	margin-top: 25px;
 }
+
+@media screen and (max-width: 1290px ) {
+	.header-phone { 
+		margin-right: 10.7%; 
+	}
+	.banner-two-inner-container > p {
+		font-size: 1em; 
+	}
+	.smile-gallery-info-container{
+		width: 80%;
+	}
+	.gallery-link-container-two > img {
+		left: 7%;
+	}
+	.blog-image {
+		margin-bottom: 30px;
+
+	}
+}
+
+@media screen and (max-width: 1190px ) {
+	.header-credentials-button-container {
+		margin-left: 28%;
+	}
+	nav {
+		margin-left:25%;
+	}
+	.top-banner-inner {
+		left: 55%;
+
+	}
+	.banner-two-inner-container > p {
+		font-size: .8em; 
+	}
+	.gallery-link-container-two > img {
+		left: 10%;
+	}
+	.blog-image {
+		margin-bottom: 30px;
+
+	}
+}
+
+@media screen and (max-width: 1090px ) {
+	header > img {
+		display: none;
+	}
+	.header-credentials-button-container {
+		float: none;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-around;
+	}
+	nav {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.top-banner-inner {
+		margin-top: 0;
+	}
+	.smile-gallery-info-container {
+		margin-left: 0;
+	}
+	.info-container-two {
+		margin-left: 17%;
+	}
+	.gallery-link-container-two > img {
+		left: 3%;
+	}
+
+	.dentistry-info-office-image {
+		width: 525px;
+		float: none;
+		margin: 0 auto;
+		display: block;
+
+	}
+	.dentistry-info-office-image > img {
+		margin: 0 auto;
+	}
+
+	.banner-two-inner-container > p {
+		margin-bottom: 10px; 
+	}
+
+}
+
+@media screen and (max-width: 1000px ) {
+	nav {
+		width: 100%;
+	}
+	nav > ul { display: flex; justify-content: space-around;}
+
+	.banner-two-inner-container > h2 {
+		color: white;
+		margin-top: 25px;
+		margin-bottom: 8px;
+	}
+	.banner-two-inner-container > p {
+		margin-bottom: 15px;
+	}
+
+	.banner-two-button {
+		width: 25%;
+	}
+	.smile-gallery-info-two {
+		width: 460px;
+	}
+	.smile-gallery-info-two > p:first-child {
+		font-size: 1.1em;
+	}
+	.smile-gallery-button-two {
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 880px) {
+	.banner-slogan-button {
+		font-size: 1em;
+		height: 40px;
+		left:22px;
+		width:82.7%;
+	}
+		.banner-slogan-button > a {
+		padding-top:14px;
+	}
+	.smile-gallery-link-container > img {
+		display: none;
+
+	}
+	.dentistry-info-inner-container {
+		margin-bottom: 75px;
+	}
+	.dentistry-procedure-info-container {float: none; margin-left: auto; margin-right: auto;}
+	.smile-gallery-info-container {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.procedure-complimentary-button {
+		margin-top:20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.smile-gallery-text-row-one {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.smile-gallery-text-row-two {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -10px;
+	}
+	.smile-gallery-button {
+		margin: 0 auto;
+	}
+	.smile-gallery-info-container {
+		margin-top: 80px;
+	}
+	.smile-gallery-info-two {
+		margin-top: 80px;
+		width: 100%;
+		float: none;
+	}
+	.banner-two-inner-container > p {
+		width: 90%;
+		font-size: .6em;
+	}
+}
+
 
