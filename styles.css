@@ -104,19 +104,21 @@ nav ul {
 	border: 2px solid #fff;
 	height: 100%;
 	width: 100%;
-	/*position: relative;*/
+	position: relative;
 }
+
 .top-banner-scroll-button {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 40px;
+	bottom: -50px;
 	box-shadow: rgba(0,0,0,.5) 0px -5px 7px;
 	color: #fff;
-	padding: 1%;
+	padding: .5%;
 	background: #535353;
 	cursor: pointer;
 }
+
 .top-banner-scroll-button i {
 	margin-top: 8px;
 	display: block;
@@ -189,8 +191,8 @@ nav ul {
 	bottom: 0;
 	right: 0;
 }
-.smile-gallery-link-container .vertical-content-grid {
-	padding: 5% 0 5% 0;
+.smile-gallery-info-container {
+	padding: 10% 0;
 }
 .smile-gallery-text {
 	color: white;
@@ -359,7 +361,7 @@ nav ul {
 	color: #fff;
 	float: right;
 	width: 500px;
-	padding:1% 0;
+	padding:10% 0;
 }
 .smile-gallery-info-two > p:first-child {
 	font-size: 1.2em;
