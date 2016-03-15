@@ -22,15 +22,15 @@
 			<div class="vertical-content-grid logo">
 				<img src="images/images/logo.png">
 				<div class="header-credentials-button-container">
-					<div class="header-credentials-title">Elena C Puig, DMD, PA</div>
-					<div class="header-credentials">Aestheic & Restorative Dentistry * Cosmetic Dentistry-Orlando, FL</div>
-					<div class="credentials-button"><a href="" class="link-button">Request Appointment</a></div>
+					<div class="header-credentials-title header-spacer">Elena C Puig, DMD, PA</div>
+					<div class="header-credentials header-spacer">Aestheic & Restorative Dentistry * Cosmetic Dentistry-Orlando, FL</div>
+					<div class="credentials-button header-spacer"><a href="" class="link-button">Request Appointment</a></div>
 				</div>
 			</div>
 			<div class ="mobile-nav-icon-container">
 				<div class="nav-icon">&#9776; MENU</div>
 			</div>
-			<div class="vertical-content-grid">
+			<div class="vertical-content-grid nav-grid">
 				<nav class="desktop-nav">
 					<ul class="mobile-nav-dropdown">
 						<li><a href="" class="nav-link">MEET DR. PUIG</a></li><span>|</span>
@@ -43,7 +43,6 @@
 		</header>
 		<section class="top-banner">
 			<div class="white-border">
-				<div class="top-banner-scroll-button">SCROLL DOWN<i class=" fa fa-chevron-down" style=" display: block"></i></div>
 				<div class="vertical-content-grid">
 					<div class="top-banner-inner-container">
 						<p>enhancing lives one</p>
@@ -52,6 +51,7 @@
 						<div class="top-banner-inner-button"><a href="" class="link-button">request and appointment</a></div>
 					</div>
 				</div>
+				<div class="top-banner-scroll-button">SCROLL DOWN<i class=" fa fa-chevron-down" style=" display: block"></i></div>
 			</div>
 
 		</section>
@@ -144,12 +144,12 @@
 						<div class="blog-image">
 							<img src="images/images/blog-image-one.jpg" alt="">
 							<div class="blog-caption">Pharetra Non Sit Amet, Blandit Accumsan Est... 
-								<span><a href="">READ MORE</a></span></div>
+								<span><a href="">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
 							</div>
 							<div class="blog-image">
 								<img src="images/images/blog-image-two.jpg" alt="">
 								<div class="blog-caption">Aliquam Arcu Augue, Posuere Vel Metus In...
-									<span><a href="">READ MORE</a></span></div>
+									<span><a href="">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
 								</div>
 							</div>
 						</div>
@@ -175,19 +175,21 @@
 				</section>
 				<footer>
 					<div class="vertical-content-grid">
-						<div class="footer-inner-container">
-							<h2>(407) 545-6819</h2>
+						<div class="footer-inner-container" itemschope itemtype="http://schema.org/LocalBusiness">
+							<h2 itemprop="telephone">(407) 545-6819</h2>
 							<div class="footer-info-container">
-								<div class="div footer-info">Elena C. Puig<span></span></div>
-								<div class="div footer-info">Dynamic Smile Design<span></span></div>
-								<div class="div footer-info">1600 E. Hillcrest Street<span></span></div>
-								<div class="div footer-info">Orlando, FL 32803<span></span></div>
+								<div class="footer-info">Elena C. Puig</div>
+								<div class="footer-info" itemprop="name">Dynamic Smile Design<span></span></div>
+								<div class="footer-info" itemprop="streetAddress">1600 E. Hillcrest Street<span></span></div>
+								<div class="footer-info" ><span itemprop="addressLocality">Orlando</span>, <span itemprop="addressRegion">FL</span> <span itemprop="postalCode">32803</span></div>
 							</div>
-							<div class="footer-copyright">Copyright&copy 2012-2015 Dynamic Smile Design. All rights Reserved</div>
+
+							<div class="footer-copyright">Copyright&copy; 2012-2015 Dynamic Smile Design. All rights Reserved</div>
+							
 							<div class="footer-social-media-container">
 								<div class="footer-social-media fb"><a href=""><i class="fa fa-facebook"></i></a></div>
 								<div class="footer-social-media tw"><a href="" ><i class="fa fa-twitter"></i></a></div>
-								<div class="footer-social-media yt"><a href=""><i class="fa fa-youtube"></i></a></div>
+								<div class="footer-social-media yt"><a href=""><i class="fa fa-youtube-play"></i></a></div>
 								<div class="footer-social-media gp"><a href=""><i class="fa fa-google-plus"></i></a></div>
 								<div class="footer-social-media wp"><a href=""><i class="fa fa-wordpress"></i></a></div>
 								<div class="footer-social-media ev"><a href=""><i class="fa fa-envelope"></i></a></div>
@@ -200,26 +202,6 @@
 
 			</main>
 			<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
-			<script type="text/javascript">
-				(function($) {
-					console.log("hi");
-					$("<i class='fa fa-caret-right'></i>").appendTo(".link-button").css('margin-left', '6px');
-					$("<i class='fa fa-caret-right'></i>").appendTo(".procedure-info").css('margin-left', '6px').css("color","#b59356");
-					
-					$('.nav-icon').click(function() {
-						console.log("hey")
-						$('.mobile-nav-dropdown').slideToggle(500);
-					});
-
-					$('.top-banner-scroll-button').click(function(){
-
-						var WH = $(window).height();  
-						var SH = $('body')[0].scrollHeight;
-						$('html, body').stop().animate({scrollTop: SH-WH}, 1000);
- 						 console.log( SH+' '+WH ); // TEST
-
- 						}); 
-				})(jQuery)
-			</script>
+			<script src="js/actions.js"></script>
 		</body>
 		</html>
