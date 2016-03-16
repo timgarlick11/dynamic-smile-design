@@ -18,4 +18,36 @@ $(document).ready(function() {
  		console.log( SH+' '+WH ); // TEST
 
  	}); 
+
+	var EmployeesInfo = function (name, hours, wage) {
+		this.name = name;
+		this.hours = hours;
+		this.wage = wage;
+
+	}
+
+	var employeeArr = [];
+
+	var employeeOne = new EmployeesInfo("Tim", 40, 7.25);
+	var employeeTwo = new EmployeesInfo("natalie", 30, 7.25);
+
+	employeeArr.push(employeeOne, employeeTwo);
+
+	var calculate = function() {
+		var total = 0;
+		var hoursRatio = 0
+		for (var i = 0; i < employeeArr.length; i++) {
+			console.log(employeeArr[i].name, employeeArr[i].hours);
+			total = total + employeeArr[i].hours;
+
+		}
+		for (var i = 0; i < employeeArr.length; i++) {
+			hoursRatio = employeeArr[i].hours / total;
+			console.log(employeeArr[i].name, hoursRatio);
+
+		}
+		
+
+	}
+	calculate();
 });

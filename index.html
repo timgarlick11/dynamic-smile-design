@@ -19,8 +19,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="vertical-content-grid logo">
-				<img src="images/images/logo.png">
+			<div class="vertical-content-grid logo" itemschope itemtype="http://schema.org/LocalBusiness">
+				<img itemprop="logo" src="images/images/logo.png">
 				<div class="header-credentials-button-container">
 					<div class="header-credentials-title header-spacer">Elena C Puig, DMD, PA</div>
 					<div class="header-credentials header-spacer">Aestheic & Restorative Dentistry * Cosmetic Dentistry-Orlando, FL</div>
@@ -140,16 +140,16 @@
 			<div class="blog-border-container">
 				<div class="vertical-content-grid">
 					<h2>FROM OUR BLOG</h2>
-					<div class="blog-link-container">
+					<div class="blog-link-container" itemscope="" itemtype="http://schema.org/BlogPosting">
 						<div class="blog-image">
 							<img src="images/images/blog-image-one.jpg" alt="">
-							<div class="blog-caption">Pharetra Non Sit Amet, Blandit Accumsan Est... 
-								<span><a href="">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
+							<div class="blog-caption" itemprop="name headline">Pharetra Non Sit Amet, Blandit Accumsan Est... 
+								<span><a href="" itemprop="url">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
 							</div>
 							<div class="blog-image">
 								<img src="images/images/blog-image-two.jpg" alt="">
-								<div class="blog-caption">Aliquam Arcu Augue, Posuere Vel Metus In...
-									<span><a href="">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
+								<div class="blog-caption" itemprop="name headline">Aliquam Arcu Augue, Posuere Vel Metus In...
+									<span><a href="" itemprop="url">READ MORE <span><i class='fa fa-caret-right'></i></span></a></span></div>
 								</div>
 							</div>
 						</div>
@@ -175,10 +175,10 @@
 				</section>
 				<footer>
 					<div class="vertical-content-grid">
-						<div class="footer-inner-container" itemschope itemtype="http://schema.org/LocalBusiness">
+						<div class="footer-inner-container" itemscope itemtype="http://schema.org/LocalBusiness">
 							<h2 itemprop="telephone">(407) 545-6819</h2>
 							<div class="footer-info-container">
-								<div class="footer-info">Elena C. Puig</div>
+								<div class="footer-info" itemprop="founder">Elena C. Puig</div>
 								<div class="footer-info" itemprop="name">Dynamic Smile Design<span></span></div>
 								<div class="footer-info" itemprop="streetAddress">1600 E. Hillcrest Street<span></span></div>
 								<div class="footer-info" ><span itemprop="addressLocality">Orlando</span>, <span itemprop="addressRegion">FL</span> <span itemprop="postalCode">32803</span></div>
@@ -197,11 +197,10 @@
 						</div>
 					</div>
 				</footer>
-
-
-
 			</main>
 			<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
 			<script src="js/actions.js"></script>
 		</body>
 		</html>
+
+
