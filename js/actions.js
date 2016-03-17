@@ -28,26 +28,48 @@ $(document).ready(function() {
 
 	var employeeArr = [];
 
-	var employeeOne = new EmployeesInfo("Tim", 40, 7.25);
-	var employeeTwo = new EmployeesInfo("natalie", 30, 7.25);
+	var employeeOne = new EmployeesInfo("Megan", 30, 7.25);
+	var employeeTwo = new EmployeesInfo("Trevor", 30, 7.25);
+	var employeeThree = new EmployeesInfo("Kayla", 30, 7.25);
+	var employeeFour = new EmployeesInfo("Jonah", 30, 7.25);
+	var employeeFive = new EmployeesInfo("Alicia", 10, 7.25);
+	var employeeSix = new EmployeesInfo("Angie", 50, 7.25);
+	var employeeSeven = new EmployeesInfo("Jaxton", 20, 7.25);
+	var employeeEight = new EmployeesInfo("Kazia", 30, 7.25);
+	var employeeNine = new EmployeesInfo("Lindsay", 15, 7.25);
+	var employeeTen = new EmployeesInfo("n", 14, 7.25);
+	var employeeEleven = new EmployeesInfo("natalie", 16, 7.25);
+	var employeeTwelve = new EmployeesInfo("natalie", 13, 7.25);
+	var employeeThirteen = new EmployeesInfo("natalie", 17, 7.25);
+	var employeeFourteen = new EmployeesInfo("natalie", 40, 7.25);
+	var employeeFifteen = new EmployeesInfo("natalie", 50, 7.25);
+	var employeeSixteen = new EmployeesInfo("natalie", 45, 7.25);
 
-	employeeArr.push(employeeOne, employeeTwo);
+	employeeArr.push(employeeOne, employeeTwo, employeeThree, employeeFour, 
+		employeeFive, employeeSix, employeeSeven, employeeEight, 
+		employeeNine, employeeTen, employeeEleven, employeeTwelve, 
+		employeeThirteen, employeeFourteen, employeeFifteen, employeeSixteen);
 
-	var calculate = function() {
-		var total = 0;
+	var calculate = function(grossIncome) {
+		var totalHours = 0;
 		var hoursRatio = 0
+		var bonus = .05;
+
 		for (var i = 0; i < employeeArr.length; i++) {
 			console.log(employeeArr[i].name, employeeArr[i].hours);
-			total = total + employeeArr[i].hours;
+			totalHours = totalHours + employeeArr[i].hours;
+			console.log(totalHours);
 
 		}
+		console.log("globalInfo :" + totalHours, bonus*grossIncome);
 		for (var i = 0; i < employeeArr.length; i++) {
-			hoursRatio = employeeArr[i].hours / total;
-			console.log(employeeArr[i].name, hoursRatio);
 
+			hoursRatio = employeeArr[i].hours / totalHours;
+			bonus = bonus * hoursRatio * grossIncome;
+			console.log(employeeArr[i].name, hoursRatio, bonus, grossIncome);
+			bonus = .05; // reset bonus so it doesnt compound
 		}
-		
 
 	}
-	calculate();
+	calculate(7200);
 });

@@ -5,6 +5,17 @@ html, body {
 	color:#535353;
 	font-family: "Lato",  sans-serif;
 }
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: #99A9B9;
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: #D5D5D7;
+}
 ul {
 	padding: 0;
 	margin: 0;
@@ -77,7 +88,7 @@ ul {
 	height: 100%;
 	color: #fff;
 	padding: 3.5% 0;
-	margin: 0 10px;
+	margin: 0 7px;
 }
 nav {
 	margin-top: 40px;
@@ -276,9 +287,7 @@ nav ul {
 	text-align: center;
 }
 
-.procedure-complimentary-button > a:hover {
-	background: #7E90A7;
-}
+
 .banner-two-container {
 	background: url("images/images/banner-two.jpg")  top center no-repeat #7895b4;
 	width: 100%;
@@ -309,10 +318,7 @@ nav ul {
 .banner-two-button > a {
 	color:#C2A775;
 }
-.banner-two-button > a:hover {
-	background: #C2A775;
-	color: #fff;
-}
+
 .meet-the-team-container {
 	width: 100%;
 	height: auto;
@@ -375,9 +381,6 @@ nav ul {
 .smile-gallery-button-two {
 	background: #b59356;
 	display: inline-block;
-}
-.smile-gallery-button-two >a:hover {
-	background: #7e90a7;
 }
 .blog-container {
 	font-family: "Poppins", "Lato", sans-serif;
