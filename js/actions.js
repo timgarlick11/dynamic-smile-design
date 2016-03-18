@@ -18,7 +18,7 @@ $(document).ready(function() {
  		console.log( SH+' '+WH ); // TEST
 
  	}); 
-
+// javascript test project
 	var EmployeesInfo = function (name, hours, wage) {
 		this.name = name;
 		this.hours = hours;
@@ -37,13 +37,10 @@ $(document).ready(function() {
 	var employeeSeven = new EmployeesInfo("Jaxton", 20, 7.25);
 	var employeeEight = new EmployeesInfo("Kazia", 30, 7.25);
 	var employeeNine = new EmployeesInfo("Lindsay", 15, 7.25);
-	var employeeTen = new EmployeesInfo("n", 14, 7.25);
-	var employeeEleven = new EmployeesInfo("natalie", 16, 7.25);
-	var employeeTwelve = new EmployeesInfo("natalie", 13, 7.25);
-	var employeeThirteen = new EmployeesInfo("natalie", 17, 7.25);
-	var employeeFourteen = new EmployeesInfo("natalie", 40, 7.25);
-	var employeeFifteen = new EmployeesInfo("natalie", 50, 7.25);
-	var employeeSixteen = new EmployeesInfo("natalie", 45, 7.25);
+	var employeeTen = new EmployeesInfo("jackson", 14, 7.25);
+	var employeeEleven = new EmployeesInfo("nicole", 16, 7.25);
+	var employeeTwelve = new EmployeesInfo("Kaitlyn", 13, 7.25);
+
 
 	employeeArr.push(employeeOne, employeeTwo, employeeThree, employeeFour, 
 		employeeFive, employeeSix, employeeSeven, employeeEight, 
